@@ -83,7 +83,7 @@
         <div class="content">
           <h3 class="title is-5 has-text-centered">CooT (Ours)</h3>
           <video id="coot-video" autoplay muted loop playsinline width="100%">
-            <source src="./static/videos/COOT_1ep.mp4" type="video/mp4">
+            <source src="./static/videos/CooT_1ep.mp4" type="video/mp4">
           </video>
           <p class="is-size-7 has-text-centered">Our method: Rapid in-context adaptation.</p>
         </div>
@@ -105,7 +105,7 @@
           <video id="hsp-video" autoplay muted loop playsinline width="100%">
             <source src="./static/videos/HSP_1ep.mp4" type="video/mp4">
           </video>
-          <p class="is-size-7 has-text-centered">Hidden Strategy Predictor baseline.</p>
+          <p class="is-size-7 has-text-centered">Hidden-utility Self Play baseline.</p>
         </div>
       </div>
 
@@ -130,18 +130,13 @@
         <h2 class="title is-3">Abstract</h2>
         <div class="content has-text-justified">
           <p>
-            Effective coordination among artificial agents in dynamic and uncertain environments remains a significant challenge in multi-agent systems. 
-            Existing approaches, such as self-play and population-based methods, either generalize poorly to unseen partners or require impractically extensive fine-tuning.
+            Effective coordination among unfamiliar partners remains a major challenge in multi-agent systems. Existing approaches, such as population-based methods, improve robustness through diversity but often lack mechanisms for efficient adaptation beyond the training distribution. Furthermore, gradient-based fine-tuning is often impractical for few-shot coordination as it requires a large number of interactions for meaningful improvement.
           </p>
           <p>
-            To overcome these limitations, we propose <strong>Coordination Transformers (CooT)</strong>, a novel in-context coordination framework that uses recent interaction histories to rapidly adapt to unseen partners. 
-            Unlike prior approaches that primarily aim to diversify training partners, CooT explicitly focuses on adapting to new partner behaviors by predicting actions aligned with observed interactions.
+            To address these limitations, we propose <strong>Coordination Transformers (CooT)</strong>, a framework that leverages <strong>In-Context Learning (ICL)</strong> for real-time partner adaptation. Unlike prior ICL approaches that focus primarily on task generalization, CooT is specifically designed to generalize across diverse partner behaviors. By training on trajectories from behavior-preferring agents, CooT learns to align its actions with partner intentions purely through observation, without requiring explicit supervision or parameter updates.
           </p>
           <p>
-            Trained on trajectories collected from diverse pairs of agents with complementary preferences, CooT quickly learns effective coordination strategies without explicit supervision or parameter updates. 
-            Across diverse coordination tasks in <strong>Overcooked</strong>, CooT consistently outperforms baselines including population-based approaches, gradient-based fine-tuning, and a Meta-RL-inspired contextual adaptation method. 
-            Notably, fine-tuning proves unstable and ineffective, while Meta-RL struggles to achieve reliable coordination. 
-            By contrast, CooT achieves stable, rapid in-context adaptation and is consistently ranked the most effective collaborator in human evaluations.
+            We evaluate CooT on two challenging multi-agent benchmarks: <strong>Overcooked</strong> and <strong>Google Research Football</strong>. Results demonstrate that CooT consistently outperforms population-based methods, gradient-based fine-tuning, and Meta-RL baselines, achieving stable and rapid adaptation. Furthermore, human evaluations identify CooT as the preferred collaborator. Our ablations confirm its ability to remain stable under sudden partner changes, making it a reliable framework for real-world human-AI collaboration.
           </p>
         </div>
       </div>
