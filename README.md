@@ -2,7 +2,7 @@
 
 This is the repository that contains the source code for the project page of the paper **"CooT: Learning to Coordinate In-Context with Coordination Transformers"**.
 
-**Status:** Under review as a conference paper at ICLR 2026.
+**Status:** Under review as a conference paper at ICML 2026.
 
 ## Anonymity
 The authors remain anonymous for the double-blind review process.
