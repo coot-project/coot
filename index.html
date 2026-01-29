@@ -74,19 +74,54 @@
   </div>
 </section>
 
-<section class="hero teaser">
+<section class="section">
   <div class="container is-max-desktop">
-    <div class="hero-body">
-      <video id="teaser" autoplay muted loop playsinline height="100%">
-        <source src="./static/videos/COOT_1ep.mp4"
-                type="video/mp4"> -->
-      </video>
-      <h2 class="subtitle has-text-centered">
-        <span class="dnerf">CooT</span> explicitly focuses on adapting to new partner behaviors by predicting actions aligned with observed interactions.
-      </h2> 
-     </div>
+    <h2 class="title is-3 has-text-centered">Coordination Demos</h2>
+    <div class="columns is-multiline">
+      
+      <div class="column is-half">
+        <div class="content">
+          <h3 class="title is-5 has-text-centered">CooT (Ours)</h3>
+          <video id="coot-video" autoplay muted loop playsinline width="100%">
+            <source src="./static/videos/COOT_1ep.mp4" type="video/mp4">
+          </video>
+          <p class="is-size-7 has-text-centered">Our method: Rapid in-context adaptation.</p>
+        </div>
+      </div>
+
+      <div class="column is-half">
+        <div class="content">
+          <h3 class="title is-5 has-text-centered">Behavioral Cloning (BC)</h3>
+          <video id="bc-video" autoplay muted loop playsinline width="100%">
+            <source src="./static/videos/BC_1ep.mp4" type="video/mp4">
+          </video>
+          <p class="is-size-7 has-text-centered">Standard BC: Struggles with unseen partner variations.</p>
+        </div>
+      </div>
+
+      <div class="column is-half">
+        <div class="content">
+          <h3 class="title is-5 has-text-centered">HSP</h3>
+          <video id="hsp-video" autoplay muted loop playsinline width="100%">
+            <source src="./static/videos/HSP_1ep.mp4" type="video/mp4">
+          </video>
+          <p class="is-size-7 has-text-centered">Hidden Strategy Predictor baseline.</p>
+        </div>
+      </div>
+
+      <div class="column is-half">
+        <div class="content">
+          <h3 class="title is-5 has-text-centered">MEP</h3>
+          <video id="mep-video" autoplay muted loop playsinline width="100%">
+            <source src="./static/videos/MEP_1ep.mp4" type="video/mp4">
+          </video>
+          <p class="is-size-7 has-text-centered">Maximum Entropy Population baseline.</p>
+        </div>
+      </div>
+
+    </div>
   </div>
-</section> 
+</section>
 
 <section class="section">
   <div class="container is-max-desktop">
