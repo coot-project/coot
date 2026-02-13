@@ -140,7 +140,7 @@
             </video>
             <span class="tag is-primary" style="position: absolute; top: 10px; left: 1px; opacity: 0.9; font-weight: bold;">CooT</span>
           </div>
-          <p class="is-size-7">
+          <p class="is-size-6">
             <strong>In-Context Adaptation:</strong> CooT naturally develops coordination by conditioning on the full interaction history. It identifies partner intent from real-time cues and adapts instantly without explicit modeling.
           </p>
         </div>
@@ -155,9 +155,9 @@
             </video>
             <span class="tag is-info" style="position: absolute; top: 10px; left: 10px; opacity: 0.9; font-weight: bold;">BC</span>
           </div>
-          <p class="is-size-7">
+          <p class="is-size-6">
             <strong>No Adaptation Mechanism:</strong> Behavior Cloning (BC) works in simple layouts where agents act independently.
-However, when real coordination is required, it cannot adjust to a partner’s behavior.
+            However, when real coordination is required, it cannot adjust to a partner’s behavior.
           </p>
         </div>
       </div>
@@ -170,7 +170,7 @@ However, when real coordination is required, it cannot adjust to a partner’s b
               <video id="hsp-video" autoplay muted loop playsinline width="100%" style="border-radius: 8px;">
                 <source src="./static/videos/HSP_1ep.mp4" type="video/mp4">
               </video>
-              <span class="tag is-warning" style="position: absolute; top: 10px; left: 10px; opacity: 0.9; font-weight: bold;">HSP/span>
+              <span class="tag is-warning" style="position: absolute; top: 10px; left: 10px; opacity: 0.9; font-weight: bold;">HSP</span>
             </div>
           </div>
           <div class="column is-half">
@@ -183,8 +183,9 @@ However, when real coordination is required, it cannot adjust to a partner’s b
             </div>
           </div>
         </div>
-        <p class="is-size-7 has-text-centered" style="margin-top: 5px; padding: 0 10px;">
-          <strong>Population Bottleneck:</strong> Population-based approaches (HSP, MEP) depend on a predefined partner pool during training. They struggle when interacting with humans whose behaviors differ from what they have seen before.
+        <p class="is-size-6" style="margin-top: 5px; padding: 0 10px;">
+          <strong>Population Bottleneck:</strong> Population-based approaches (HSP, MEP) depend on a predefined partner pool during training. 
+          They struggle when interacting with humans whose behaviors differ from what they have seen before.
         </p>
       </div>
 
@@ -193,23 +194,6 @@ However, when real coordination is required, it cannot adjust to a partner’s b
 </section>
 
 
-
-    <!-- <div class="box has-background-white-bis" style="margin-top: 3rem;">
-      <h3 class="title is-4 has-text-centered">Human-AI User Study</h3>
-      <div class="content">
-        <p class="has-text-centered">
-          We conducted a double-blind user study with <strong>36 participants</strong> (1,152 total rounds). 
-          CooT significantly outperformed all baselines in both objective returns and human preference:
-        </p>
-        <ul class="is-size-6">
-          <li><strong>Quantitative:</strong> CooT achieved the highest mean return, establishing a clear lead as layout complexity increases.</li>
-          <li><strong>Preference:</strong> Selected as the most preferred partner by <strong>50%</strong> of participants (18/36).</li>
-          <li><strong>Qualitative:</strong> Participants recognized CooT's <strong>adaptive behaviors</strong>, noting that it explicitly improves coordination over the course of interaction.</li>
-        </ul>
-      </div>
-    </div>
-
-  </div> -->
   
  <section class="section pt-0">
   <div class="container is-max-desktop">
@@ -218,12 +202,12 @@ However, when real coordination is required, it cannot adjust to a partner’s b
       <div class="column is-half has-text-centered">
         <h4 class="title is-5">Overcooked Benchmark</h4>
         <img src="./static/images/main_table.png" alt="Overcooked Results" style="width:100%; border: 1px solid #eee;">
-        <p class="is-size-7 mt-2">CooT leads in complex layouts like <i>Coord. Ring Multi-recipe</i> where agents must balance concurrent goals.</p>
+        <p class="is-size-6">CooT leads in complex layouts like <i>Coord. Ring Multi-recipe</i> where agents must balance concurrent goals.</p>
       </div>
       <div class="column is-half has-text-centered">
         <h4 class="title is-5">Scalability (GRF)</h4>
         <img src="./static/images/grf_table.png" alt="GRF Results" style="width:100%; border: 1px solid #eee;">
-        <p class="is-size-7 mt-2">Successfully scaling to 3-player environments, outperforming strong baselines in complex football scenarios.</p>
+        <p class="is-size-6">Successfully scaling to 3-player environments, outperforming strong baselines in complex football scenarios.</p>
       </div>
     </div>
   </div>
@@ -236,7 +220,7 @@ However, when real coordination is required, it cannot adjust to a partner’s b
       <div class="column is-6">
         <h4 class="title is-5 has-text-centered">Few-shot Adaptation Curve</h4>
         <img src="./static/images/adaptation_curve.png" alt="Adaptation Curve" style="width:100%;">
-        <p class="is-size-7 mt-2">
+        <p class="is-size-6">
           CooT improves within the first 15 episodes and sustains performance, showing that a handful of trajectories are sufficient to align with novel partners.
         </p>
       </div>
