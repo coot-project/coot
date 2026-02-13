@@ -141,7 +141,7 @@
             <span class="tag is-primary" style="position: absolute; top: 10px; left: 35px; opacity: 0.9; font-weight: bold;">CooT</span>
           </div>
           <p class="is-size-6">
-            <strong>In-Context Adaptation:</strong> CooT naturally develops coordination by conditioning on the full interaction history. It identifies partner intent from real-time cues and adapts instantly without explicit modeling.
+            <strong>In-Context Adaptation:</strong> CooT leverages ICL to identify partner intentions from real-time cues. It adapts its policy based on interaction history context without requiring explicit partner modeling.
           </p>
         </div>
       </div>
@@ -200,50 +200,54 @@
       
       <div class="column is-half">
         <h4 class="title is-5 has-text-centered">Overcooked Benchmark</h4>
-        <div class="has-text-centered">
-           <img src="images/main_table_2.png" alt="Overcooked Results" style="width:100%; border: 1px solid #eee;">
+        <div style="height: 280px; display: flex; align-items: center; justify-content: center; background-color: white; border-radius: 4px; border: 1px solid #eee;">
+           <img src="images/main_table_2.png" alt="Overcooked Results" style="max-height: 100%; width: auto; object-fit: contain;">
         </div>
-        <p class="is-size-6 mt-2">
-          CooT leads in complex layouts like <i>Coord. Ring Multi-recipe</i> where agents must balance concurrent goals.
+        <p class="is-size-6 mt-3">
+          CooT leads in complex layouts like <i>Coord. Ring Multi-recipe</i>. This advantage stems from conditioning on full interaction histories to <strong>predict best-response actions</strong> for unseen partners.
         </p>
       </div>
 
       <div class="column is-half">
         <h4 class="title is-5 has-text-centered">Scalability (GRF)</h4>
-        <div class="has-text-centered">
-           <img src="images/grf_table_2.png" alt="GRF Results" style="width:100%; border: 1px solid #eee;">
+        <div style="height: 280px; display: flex; align-items: center; justify-content: center; background-color: white; border-radius: 4px; border: 1px solid #eee;">
+           <img src="images/grf_table_2.png" alt="GRF Results" style="max-height: 100%; width: auto; object-fit: contain;">
         </div>
-        <p class="is-size-6 mt-2">
-          Successfully scaling to 3-player environments, outperforming strong baselines in complex football scenarios.
+        <p class="is-size-6 mt-3">
+          Beyond two-agent scenarios, CooT effectively generalizes to <strong>three-player complex environments</strong> in GRF. It outperforms strong baselines by adapting to multi-partner coordination dynamics.
         </p>
       </div>
 
     </div>
   </div>
 </section>
-  
-
 
 <section class="section pt-0">
   <div class="container is-max-desktop">
-    <!-- <h2 class="title is-3 has-text-centered">Analysis of Adaptation</h2> -->
     <div class="columns is-vcentered">
+      
       <div class="column is-6">
         <h4 class="title is-5 has-text-centered">Few-shot Adaptation Curve</h4>
-        <img src="images/adaptation_curve.png" alt="Adaptation Curve" style="width:100%;">
-        <p class="is-size-6">
-          CooT improves within the first 15 episodes and sustains performance, showing that a handful of trajectories are sufficient to align with novel partners.
+        <div style="height: 320px; display: flex; align-items: center; justify-content: center;">
+          <img src="images/adaptation_curve.png" alt="Adaptation Curve" style="max-height: 100%; width: auto; object-fit: contain;">
+        </div>
+        <p class="is-size-6 mt-3">
+          CooT improves within the first 15 episodes and sustains performance. Only a handful of trajectories are sufficient to align with novel, unseen partners.
         </p>
       </div>
+
       <div class="column is-6">
-          <h4 class="title is-5 has-text-centered">Human-AI User Study</h4>
-          <img src="images/human_study.png" alt="Adaptation Curve" style="width:100%;">
-          <div class="content is-size-6">
-            <p class="is-size-6">
-              Selected as most preferred by <strong>50%</strong> of users.
-            </p>
-          </div>
+        <h4 class="title is-5 has-text-centered">Human-AI User Study</h4>
+        <div style="height: 320px; display: flex; align-items: center; justify-content: center;">
+          <img src="images/human_study.png" alt="Human Study Results" style="max-height: 100%; width: auto; object-fit: contain;">
+        </div>
+        <div class="content is-size-6 mt-3">
+          <p>
+            CooT is selected as most preferred by <strong>50%</strong> of users. Participants recognized CooT's <strong>adaptive capabilities</strong> as a primary strength, noting it observably improves coordination over time.
+          </p>
+        </div>
       </div>
+
     </div>
   </div>
 </section>
