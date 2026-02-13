@@ -77,52 +77,83 @@
 <section class="section">
   <div class="container is-max-desktop">
     <h2 class="title is-3 has-text-centered">Coordination Demos</h2>
+    
+    <div class="notification is-light has-text-centered">
+      <p>All demos feature <strong>Human-AI Coordination</strong>. 
+      The <span class="tag is-primary is-light">Agent (CooT/Baselines)</span> is tasked with collaborating with a 
+      <span class="tag is-info is-light">Human/Proxy Partner</span> whose behavior is unseen during training.</p>
+    </div>
+
     <div class="columns is-multiline">
       
       <div class="column is-half">
         <div class="content">
           <h3 class="title is-5 has-text-centered">CooT (Ours)</h3>
-          <video id="coot-video" autoplay muted loop playsinline width="100%">
-            <source src="./static/videos/CooT_1ep.mp4" type="video/mp4">
-          </video>
-          <p class="is-size-7 has-text-centered">Our method: Rapid in-context adaptation.</p>
+          <div class="video-container" style="position: relative;">
+            <video id="coot-video" autoplay muted loop playsinline width="100%">
+              <source src="./static/videos/CooT_1ep.mp4" type="video/mp4">
+            </video>
+            <span class="tag is-primary" style="position: absolute; top: 10px; left: 10px; opacity: 0.8;">Agent: Green</span>
+          </div>
+          <p class="is-size-7 has-text-centered">
+            <strong>Human-AI Setup:</strong> Our method demonstrates <strong>rapid in-context adaptation</strong>, 
+            identifying and matching the human partner's strategy within a few interaction steps.
+          </p>
         </div>
       </div>
 
       <div class="column is-half">
         <div class="content">
           <h3 class="title is-5 has-text-centered">Behavioral Cloning (BC)</h3>
-          <video id="bc-video" autoplay muted loop playsinline width="100%">
-            <source src="./static/videos/BC_1ep.mp4" type="video/mp4">
-          </video>
-          <p class="is-size-7 has-text-centered">Standard BC: Struggles with unseen partner variations.</p>
+          <div class="video-container" style="position: relative;">
+            <video id="bc-video" autoplay muted loop playsinline width="100%">
+              <source src="./static/videos/BC_1ep.mp4" type="video/mp4">
+            </video>
+            <span class="tag is-primary" style="position: absolute; top: 10px; left: 10px; opacity: 0.8;">Agent: Green</span>
+          </div>
+          <p class="is-size-7 has-text-centered">
+            <strong>Human-AI Setup:</strong> Standard BC struggles with unseen partner variations, 
+            often leading to coordination failure when the partner deviates from the training data.
+          </p>
         </div>
       </div>
 
       <div class="column is-half">
         <div class="content">
           <h3 class="title is-5 has-text-centered">HSP</h3>
-          <video id="hsp-video" autoplay muted loop playsinline width="100%">
-            <source src="./static/videos/HSP_1ep.mp4" type="video/mp4">
-          </video>
-          <p class="is-size-7 has-text-centered">Hidden-utility Self Play baseline.</p>
+          <div class="video-container" style="position: relative;">
+            <video id="hsp-video" autoplay muted loop playsinline width="100%">
+              <source src="./static/videos/HSP_1ep.mp4" type="video/mp4">
+            </video>
+            <span class="tag is-primary" style="position: absolute; top: 10px; left: 10px; opacity: 0.8;">Agent: Green</span>
+          </div>
+          <p class="is-size-7 has-text-centered">
+            <strong>Human-AI Setup:</strong> Hidden-utility Self Play baseline. 
+            Shows limited zero-shot coordination performance with diverse human styles.
+          </p>
         </div>
       </div>
 
       <div class="column is-half">
         <div class="content">
           <h3 class="title is-5 has-text-centered">MEP</h3>
-          <video id="mep-video" autoplay muted loop playsinline width="100%">
-            <source src="./static/videos/MEP_1ep.mp4" type="video/mp4">
-          </video>
-          <p class="is-size-7 has-text-centered">Maximum Entropy Population baseline.</p>
+          <div class="video-container" style="position: relative;">
+            <video id="mep-video" autoplay muted loop playsinline width="100%">
+              <source src="./static/videos/MEP_1ep.mp4" type="video/mp4">
+            </video>
+            <span class="tag is-primary" style="position: absolute; top: 10px; left: 10px; opacity: 0.8;">Agent: Green</span>
+          </div>
+          <p class="is-size-7 has-text-centered">
+            <strong>Human-AI Setup:</strong> Maximum Entropy Population baseline. 
+            Tries to be robust but lacks the explicit context-awareness for optimal coordination.
+          </p>
         </div>
       </div>
 
     </div>
   </div>
 </section>
-
+  
 <section class="section">
   <div class="container is-max-desktop">
     <div class="columns is-centered has-text-centered">
