@@ -200,21 +200,21 @@
       
       <div class="column is-half">
         <h4 class="title is-5 has-text-centered">Overcooked Benchmark</h4>
-        <div style="height: 280px; display: flex; align-items: center; justify-content: center; background-color: white; border-radius: 4px; border: 1px solid #eee;">
+        <div style="height: 500px; display: flex; align-items: center; justify-content: center; background-color: white; border-radius: 4px; border: 1px solid #eee; padding: 10px;">
            <img src="images/main_table_2.png" alt="Overcooked Results" style="max-height: 100%; width: auto; object-fit: contain;">
         </div>
         <p class="is-size-6 mt-3">
-          CooT leads in complex layouts like <i>Coord. Ring Multi-recipe</i>. This advantage stems from conditioning on full interaction histories to <strong>predict best-response actions</strong> for unseen partners.
+          CooT leads in complex layouts like <i>Coord. Ring Multi-recipe</i>. This advantage stems from conditioning on full interaction histories to <strong>predict best-response actions</strong> for diverse, unseen partners.
         </p>
       </div>
 
       <div class="column is-half">
-        <h4 class="title is-5 has-text-centered">Scalability (GRF)</h4>
-        <div style="height: 280px; display: flex; align-items: center; justify-content: center; background-color: white; border-radius: 4px; border: 1px solid #eee;">
+        <h4 class="title is-5 has-text-centered">Google Research Football (GRF)</h4>
+        <div style="height: 500px; display: flex; align-items: center; justify-content: center; background-color: white; border-radius: 4px; border: 1px solid #eee; padding: 10px;">
            <img src="images/grf_table_2.png" alt="GRF Results" style="max-height: 100%; width: auto; object-fit: contain;">
         </div>
         <p class="is-size-6 mt-3">
-          Beyond two-agent scenarios, CooT effectively generalizes to <strong>three-player complex environments</strong> in GRF. It outperforms strong baselines by adapting to multi-partner coordination dynamics.
+          CooT successfully scales to <strong>three-player complex environments</strong> in GRF. It effectively generalizes beyond two-agent scenarios, outperforming baselines in complex football dynamics.
         </p>
       </div>
 
@@ -224,26 +224,27 @@
 
 <section class="section pt-0">
   <div class="container is-max-desktop">
+    <h2 class="title is-3 has-text-centered">Analysis of Adaptation</h2>
     <div class="columns is-vcentered">
       
       <div class="column is-6">
-        <h4 class="title is-5 has-text-centered">Few-shot Adaptation Curve</h4>
-        <div style="height: 320px; display: flex; align-items: center; justify-content: center;">
+        <h4 class="title is-5 has-text-centered">Few-shot Adaptation</h4>
+        <div style="height: 350px; display: flex; align-items: center; justify-content: center; padding: 10px;">
           <img src="images/adaptation_curve.png" alt="Adaptation Curve" style="max-height: 100%; width: auto; object-fit: contain;">
         </div>
         <p class="is-size-6 mt-3">
-          CooT improves within the first 15 episodes and sustains performance. Only a handful of trajectories are sufficient to align with novel, unseen partners.
+          CooT demonstrates efficient adaptation within the first 15 episodes. Only a handful of trajectories are sufficient to align its policy with novel, unseen partner behaviors.
         </p>
       </div>
 
       <div class="column is-6">
         <h4 class="title is-5 has-text-centered">Human-AI User Study</h4>
-        <div style="height: 320px; display: flex; align-items: center; justify-content: center;">
+        <div style="height: 350px; display: flex; align-items: center; justify-content: center; padding: 10px;">
           <img src="images/human_study.png" alt="Human Study Results" style="max-height: 100%; width: auto; object-fit: contain;">
         </div>
         <div class="content is-size-6 mt-3">
           <p>
-            CooT is selected as most preferred by <strong>50%</strong> of users. Participants recognized CooT's <strong>adaptive capabilities</strong> as a primary strength, noting it observably improves coordination over time.
+            In a double-blind study with 36 participants, CooT was selected as the most preferred partner by <strong>50%</strong> of users. Participants noted its observable <strong>adaptive capabilities</strong> as a primary strength.
           </p>
         </div>
       </div>
