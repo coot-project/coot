@@ -82,6 +82,13 @@ body {
   display: inline-block;
 }
 
+.publication-venue {
+  color: #3273dc;
+  font-weight: 700;
+  margin-top: 0.75rem;
+  margin-bottom: 1.25rem;
+}
+
 .publication-banner img {
 }
 
